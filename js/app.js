@@ -18,14 +18,14 @@ async function getCurrencyData(){
         let converted_currency_option = document.createElement("option");
 
         origin_currency_option.textContent = response.data[x].code;
-        origin_currency_option.setAttribute("value", response.data[x].value.toFixed(3));
+        origin_currency_option.setAttribute("value", `${response.data[x].value.toFixed(3)} ${response.data[x].code}`);
 
         origin_currency_option.setAttribute("class", `origin_currency_${response.data[x].code.toLowerCase()}`);
         origin_currency_select_option.appendChild(origin_currency_option);
 
 
         converted_currency_option.textContent = response.data[x].code;
-        converted_currency_option.setAttribute("value", response.data[x].value.toFixed(3));
+        converted_currency_option.setAttribute("value", `${response.data[x].value.toFixed(3)} ${response.data[x].code}`);
 
         convert_currency_select_option.setAttribute("class", `origin_currency_${response.data[x].code.toLowerCase()}`);
         convert_currency_select_option.appendChild(converted_currency_option);
@@ -43,3 +43,6 @@ convert_currency_select_option.addEventListener("change", ()=>{
     converted_currency_conversion_rate.textContent = convert_currency_select_option.value;
 })
 
+currency_converter_form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+})
