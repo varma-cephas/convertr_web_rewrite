@@ -10,3 +10,67 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.greet_user__user_avatar__inner_container{
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.3em;
+}
+
+.user_avatar_container{
+    border: 2px solid;
+    padding: .50em 1.1em;
+    margin: .80em 0;
+    border-radius: 50%;
+}
+
+.currency_converter__inner_container{
+    border: 2px solid;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.currency_amount_input{
+   font-size: medium;
+   padding: .50em 0;
+    text-align: center;
+}
+
+.select_currency_container{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.conversion_rate__inner_container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conversion_rate__inner_container h2{
+    margin: 0;
+    padding: 0;
+}
+
+.arrow{
+    width: 20%;
+}
+
+.convert_button{
+    padding: 1.1em;
+    cursor: pointer;
+}
+
+.convert_button_container{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.converted_currency_value_output_container{
+    text-align: center;
+}
+
+.converted_currency_value_output{
+    font: 1.4em;
+}

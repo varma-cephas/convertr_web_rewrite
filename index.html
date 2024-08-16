@@ -6,25 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <section class="greet_user__user_avatar_container">
+            <div class="greet_user__user_avatar__inner_container">
+                <h1>Hi, <span class="user_name">Varma!</span></h1>
+                <div class="user_avatar_container">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
         <section>
             <form class="currency_converter_form">
-                <input type="number" class="currency_amount_input">
-                <div>
+                <div class="currency_converter__inner_container">
+                    <input type="number" class="currency_amount_input" placeholder="Amount">
+                <div class="select_currency_container">
                     <select class="origin_currency_select_option">
  
                     </select>
                     <select class="convert_currency_select_option">
  
                     </select>
-                    <div>
-                        <h2>Conversion Rate</h2>
-                        <span class="origin_currency_conversion_rate"></span> = 
-                        <span class="converted_currency_conversion_rate"></span>
+                </div>
+                <div>
+                    <div class="conversion_rate__inner_container">
+                        <h2>
+                            <i>Conversion Rate</i>
+                        </h2>
+                        <div>
+                            <span class="origin_currency_conversion_rate"></span> 
+                        </div>
+                            <img class="arrow" src="./assets/right_arrow.svg" alt="">
+                        <div>
+                            <span class="converted_currency_conversion_rate"></span>
+                        </div>
                     </div>
                 </div>
-                <input type="submit" value="convert">
+                <div>
+                    <div class="convert_button_container">
+                        <input class="convert_button" type="submit" value="convert">
+                    </div>
+                </div>
                 <div class="converted_currency_value_output_container">
-                    <div class="converted_currency_value_output"></div>
+                    <h2 >
+                        <i class="converted_currency_value_output"></i>
+                    </h2>
+                </div>
                 </div>
             </form>
         </section>
