@@ -33,14 +33,23 @@ body{
 }
 
 .currency_amount_input{
-   font-size: medium;
-   padding: .50em 0;
+   font-size: large;
+   padding: .70em 0;
     text-align: center;
+    margin: 2em auto;
+    border: 2px solid;
 }
 
 .select_currency_container{
-    width: fit-content;
-    margin: 0 auto;
+    border: 2px solid;
+    display: flex;
+    gap: .50em;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.currency_select_arrow{
+    width: 40%;
 }
 
 .conversion_rate__inner_container{
@@ -71,6 +80,7 @@ body{
     cursor: pointer;
     font-size: .99em;
     font-weight: 800;
+    margin: 4.5em 0;
 }
 
 .convert_button_container{
@@ -100,4 +110,15 @@ body{
 .converted_currency_rate_value{
     display: none;
     text-align: center;
+}
+
+
+.input_currency_through_voice__inner_container{
+    width: 10%;
+    margin: 0 auto;
+    border: 2px solid #344651;
+    padding: 1.8em;
+    cursor: pointer;
+    border-radius: 100%;
+    background: #344651;
 }
