@@ -46,10 +46,11 @@ body{
     gap: .50em;
     align-items: center;
     margin: 1em 0;
+    justify-content: center;
 }
 
 .currency_select_arrow{
-    width: 40%;
+    width: 10%;
 }
 
 .conversion_rate__inner_container{
