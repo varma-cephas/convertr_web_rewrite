@@ -1,3 +1,12 @@
+:root{
+    --primary-color: #FEEDED;
+    --avatar-background: #FF6B35;
+    --input-field-color: #5C415D;
+    --neutral-color: #FFFFFF;
+    --action-button: #ED254E;
+    --mic-button: #344651;
+}
+
 html{
     box-sizing: border-box;
 }
@@ -9,7 +18,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: #FEEDED;
+    background: var(--primary-color);
 }
 
 .greet_user__user_avatar__inner_container{
@@ -21,11 +30,11 @@ body{
 }
 
 .user_avatar_container{
-    border: 2px solid #FF6B35;
+    border: 2px solid var(--avatar-background);
     padding: .50em 1.1em;
     margin: .80em 0;
     border-radius: 50%;
-    background: #FF6B35;
+    background: var(--avatar-background);
 }
 
 .currency_converter__inner_container{
@@ -38,9 +47,9 @@ body{
    padding: .70em 0;
     text-align: center;
     margin: 2em auto;
-    border: 2px solid #5C415D;
-    background: #5C415D;
-    color: #FFFFFF;
+    border: 2px solid var(--input-field-color);
+    background: var(--input-field-color);
+    color: var(--neutral-color);
 }
 
 .select_currency_container{
@@ -85,9 +94,9 @@ body{
     font-size: .99em;
     font-weight: 800;
     margin: 4.5em 0;
-    background: #ED254E;
-    border: 2px solid #ED254E;
-    color: white;
+    background: var(--action-button);
+    border: 2px solid var(--action-button);
+    color: var(--neutral-color);
 }
 
 .convert_button_container{
@@ -123,9 +132,9 @@ body{
 .input_currency_through_voice__inner_container{
     width: 10%;
     margin: 0 auto;
-    border: 2px solid #344651;
+    border: 2px solid var(--mic-button);
     padding: 1.8em;
     cursor: pointer;
     border-radius: 100%;
-    background: #344651;
+    background: var(--mic-button);
 }
